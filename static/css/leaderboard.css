@@ -135,7 +135,7 @@ input[type='date'],
 	background: #1d1d1d;
 }
 .leaderboard-results tbody tr {
-	color: #747474;
+	color: #747474;	
 }
 .leaderboard-results tbody tr:first-child {
 	color: #20a7f8;
