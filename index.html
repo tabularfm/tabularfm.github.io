@@ -167,13 +167,13 @@
 		</section>
 
 		<!-- Teaser video-->
-		<section class="hero teaser">
+		<!-- <section class="hero teaser">
 			<div class="container is-max-desktop">
 				<div class="hero-body">
-					<video poster="" id="tree" autoplay controls muted loop height="100%">
+					<video poster="" id="tree" autoplay controls muted loop height="100%"> -->
 						<!-- Your video here -->
-						<source src="static/videos/banner_video.mp4" type="video/mp4" />
-					</video>
+						<!-- <source src="static/videos/banner_video.mp4" type="video/mp4" /> -->
+					<!-- </video>
 					<h2 class="subtitle has-text-centered">
 						Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus
 						tellus, maximus vel lectus at, placerat pretium mi. Maecenas
@@ -182,7 +182,7 @@
 					</h2>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End teaser video -->
 
 		<!-- Paper abstract -->
@@ -229,7 +229,12 @@
 		<!-- Leaderboard -->
 		<section class="hero is-small is-light" style="background-color: #1a1a1a">
 			<div class="hero-body">
-				<div class="container-wrap">
+				<div class="container-wrap is-centered has-text-centered">
+					<h2 class="title is-3" style="color: white">
+						Leaderboards
+					</h2>
+					
+					<!-- Kaggle random -->
 					<section id="leaderboard kaggle-random">
 						<nav class="ladder-nav">
 							<div class="ladder-title">
@@ -257,10 +262,10 @@
 								<tr>
 									<td>1</td>
 									<td>GReaT</td>
-									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
+									<td><a href=""><u>Vadim Borisov</u></a></td>
+									<td>81,912,576</td>
+									<td><a href="https://openreview.net/pdf?id=cEygmQNOeI"><u>paper</u></a></td>
+									<td><a href="https://github.com/kathrinse/be_great"><u>github</u></a></td>
 									<td>0.73 (0.16)</td>
 									<td>0.5 (0.25)</td>
 									<td>0.61 (0.18)</td>
@@ -268,10 +273,10 @@
 								<tr>
 									<td>2</td>
 									<td>CTGAN</td>
-									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
+									<td><a href=""><u>Lei Xu</u></a></td>
+									<td>97,243,685</td>
+									<td><a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/254ed7d2de3b23ab10936522dd547b78-Paper.pdf" target="_blank"><u>paper</u></a></td>
+									<td><a href="https://github.com/sdv-dev/CTGAN"><u>github</u></a></td>
 									<td>0.70 (0.16)</td>
 									<td>0.49 (0.26)</td>
 									<td>0.59 (0.19)</td>
@@ -280,10 +285,10 @@
 								<tr>
 									<td>3</td>
 									<td>STVAE</td>
+									<td><a href=""><u>Quan Tran</u></a></td>
+									<td>9,315,214</td>
 									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
+									<td><a href="https://github.com/tabularfm/tabularfm.github.io"><u>github</u></a></td>
 									<td>0.54 (0.16)</td>
 									<td>0.45 (0.28)</td>
 									<td>0.50 (0.19)</td>
@@ -292,10 +297,10 @@
 								<tr>
 									<td>4</td>
 									<td>TVAE</td>
+									<td><a href=""><u>Lei Xu</u></a></td>
 									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
+									<td><a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/254ed7d2de3b23ab10936522dd547b78-Paper.pdf" target="_blank"><u>paper</u></a></td>
+									<td><a href="https://github.com/sdv-dev/CTGAN"><u>github</u></a></td>
 									<td>0.47 (0.13)</td>
 									<td>0.49 (0.27)</td>
 									<td>0.48 (0.17)</td>
@@ -304,13 +309,177 @@
 								<tr>
 									<td>5</td>
 									<td>STVAEM</td>
+									<td><a href=""><u>Quan Tran</u></a></td>
 									<td>N/A</td>
 									<td>N/A</td>
-									<td>N/A</td>
-									<td>N/A</td>
+									<td><a href="https://github.com/tabularfm/tabularfm.github.io"><u>github</u></a></td>
 									<td>0.43 (0.17)</td>
 									<td>0.40 (0.24)</td>
 									<td>0.42 (0.16)</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					
+					<!-- Kaggle domain -->
+					<section id="leaderboard kaggle-domain">
+						<nav class="ladder-nav">
+							<div class="ladder-title">
+								<h1>Kaggle Domain</h1>
+							</div>
+							<!-- <div class="ladder-search">
+            <input type="text" id="search-leaderboard" class="live-search-box" placeholder="Search Team, Player..." />
+          </div> -->
+						</nav>
+						<table id="rankings" class="leaderboard-results" width="100%">
+							<thead>
+								<tr>
+									<th>Rank</th>
+									<th>Model</th>
+									<th>Contact</th>
+									<th>#Params</th>
+									<th>Paper</th>
+									<th>Code</th>
+									<th>Shape score</th>
+									<th>Trend score</th>
+									<th>Overall score</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>GReaT</td>
+									<td><a href=""><u>Vadim Borisov</u></a></td>
+									<td>81,912,576</td>
+									<td><a href="https://openreview.net/pdf?id=cEygmQNOeI"><u>paper</u></a></td>
+									<td><a href="https://github.com/kathrinse/be_great"><u>github</u></a></td>
+									<td>0.72 (0.14)</td>
+									<td>0.56 (0.23)</td>
+									<td>0.64 (0.16)</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>CTGAN</td>
+									<td><a href=""><u>Lei Xu</u></a></td>
+									<td>97,243,685</td>
+									<td><a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/254ed7d2de3b23ab10936522dd547b78-Paper.pdf" target="_blank"><u>paper</u></a></td>
+									<td><a href="https://github.com/sdv-dev/CTGAN"><u>github</u></a></td>
+									<td>0.69 (0.12)</td>
+									<td>0.53 (0.24)</td>
+									<td>0.62 (0.15)</td>
+								</tr>
+
+								<tr>
+									<td>3</td>
+									<td>STVAE</td>
+									<td><a href=""><u>Quan Tran</u></a></td>
+									<td>9,315,214</td>
+									<td>N/A</td>
+									<td><a href="https://github.com/tabularfm/tabularfm.github.io"><u>github</u></a></td>
+									<td>0.48 (0.13)</td>
+									<td>0.43 (0.25)</td>
+									<td>0.46 (0.13)</td>
+								</tr>
+
+								<tr>
+									<td>4</td>
+									<td>TVAE</td>
+									<td><a href=""><u>Lei Xu</u></a></td>
+									<td>N/A</td>
+									<td><a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/254ed7d2de3b23ab10936522dd547b78-Paper.pdf" target="_blank"><u>paper</u></a></td>
+									<td><a href="https://github.com/sdv-dev/CTGAN"><u>github</u></a></td>
+									<td>0.39 (0.13)</td>
+									<td>0.45 (0.27)</td>
+									<td>0.42 (0.17)</td>
+								</tr>
+
+								<tr>
+									<td>5</td>
+									<td>STVAEM</td>
+									<td><a href=""><u>Quan Tran</u></a></td>
+									<td>N/A</td>
+									<td>N/A</td>
+									<td><a href="https://github.com/tabularfm/tabularfm.github.io"><u>github</u></a></td>
+									<td>0.43 (0.11)</td>
+									<td>0.39 (0.22)</td>
+									<td>0.41 (0.13)</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<!-- Kaggle domain -->
+					<section id="leaderboard gittables-random">
+						<nav class="ladder-nav">
+							<div class="ladder-title">
+								<h1>Gittables</h1>
+							</div>
+							<!-- <div class="ladder-search">
+            <input type="text" id="search-leaderboard" class="live-search-box" placeholder="Search Team, Player..." />
+          </div> -->
+						</nav>
+						<table id="rankings" class="leaderboard-results" width="100%">
+							<thead>
+								<tr>
+									<th>Rank</th>
+									<th>Model</th>
+									<th>Contact</th>
+									<th>#Params</th>
+									<th>Paper</th>
+									<th>Code</th>
+									<th>Shape score</th>
+									<th>Trend score</th>
+									<th>Overall score</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>CTGAN</td>
+									<td><a href=""><u>Lei Xu</u></a></td>
+									<td>97,243,685</td>
+									<td><a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/254ed7d2de3b23ab10936522dd547b78-Paper.pdf" target="_blank"><u>paper</u></a></td>
+									<td><a href="https://github.com/sdv-dev/CTGAN"><u>github</u></a></td>
+									<td>0.67 (0.12)</td>
+									<td>0.55 (0.24)</td>
+									<td>0.61 (0.14)</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>GReaT</td>
+									<td><a href=""><u>Vadim Borisov</u></a></td>
+									<td>81,912,576</td>
+									<td><a href="https://openreview.net/pdf?id=cEygmQNOeI"><u>paper</u></a></td>
+									<td><a href="https://github.com/kathrinse/be_great"><u>github</u></a></td>
+									<td>0.68 (0.22)</td>
+									<td>0.56 (0.27)</td>
+									<td>0.61 (0.19)</td>
+								</tr>
+
+								<tr>
+									<td>3</td>
+									<td>STVAE</td>
+									<td><a href=""><u>Quan Tran</u></a></td>
+									<td>9,315,214</td>
+									<td>N/A</td>
+									<td><a href="https://github.com/tabularfm/tabularfm.github.io"><u>github</u></a></td>
+									<td>0.55 (0.12)</td>
+									<td>0.59 (0.27)</td>
+									<td>0.57 (0.13)</td>
+								</tr>
+
+								<tr>
+									<td>4</td>
+									<td>TVAE</td>
+									<td><a href=""><u>Lei Xu</u></a></td>
+									<td>N/A</td>
+									<td><a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/254ed7d2de3b23ab10936522dd547b78-Paper.pdf" target="_blank"><u>paper</u></a></td>
+									<td><a href="https://github.com/sdv-dev/CTGAN"><u>github</u></a></td>
+									<td>0.45 (0.13)</td>
+									<td>0.49 (0.27)</td>
+									<td>0.47 (0.15)</td>
+								</tr>
+
 								</tr>
 							</tbody>
 						</table>
@@ -333,7 +502,7 @@
 		</section>
 
 		<!-- Image carousel -->
-		<section class="hero is-small is-light">
+		<section class="hero is-small is-light" style="background-color: #1a1a1a;">
 			<div class="hero-body">
 				<div
 					class="container"
@@ -341,7 +510,7 @@
 				>
 					<h2
 						class="title is-3"
-						style="align-self: center; justify-self: center; margin-top: 16px"
+						style="align-self: center; justify-self: center; margin-top: 16px; color: white;"
 					>
 						Transferability Analysis
 					</h2>
@@ -349,7 +518,7 @@
 						<div class="item">
 							<!-- Your image here -->
 							<img src="static/images/wc_val_stvae.png" alt="wc_val_stvae" />
-							<h2 class="subtitle has-text-centered">
+							<h2 class="subtitle has-text-centered" style="color: white;">
 								Wordclouds showing best and worse transferability columns of
 								Kaggle validation datasets in STVAE experiment.
 							</h2>
@@ -361,7 +530,7 @@
 								src="static/images/chord_test_stvae.png"
 								alt="chord_test_stvae"
 							/>
-							<h2 class="subtitle has-text-centered">
+							<h2 class="subtitle has-text-centered" style="color: white;">
 								Top 30 column pairs with best and worst transferability (left
 								and right) in Kaggle test datasets from STVAE experiments.
 							</h2>
@@ -374,7 +543,7 @@
 								style="object-fit: contain"
 								width="100%"
 							/>
-							<h2 class="subtitle has-text-centered">
+							<h2 class="subtitle has-text-centered" style="color: white;">
 								Training between pretrained vs. trained from scratch models.
 							</h2>
 						</div>
@@ -384,7 +553,7 @@
 								src="static/images/col_shapes_numerical_stvae.png"
 								alt="col_shapes_numerical_stvae"
 							/>
-							<h2 class="subtitle has-text-centered">
+							<h2 class="subtitle has-text-centered" style="color: white;">
 								Distribution of data from numerical columns between pretrained
 								vs. trained from scratch models. Data is retrieved from Kaggle
 								datasets, STVAE.
@@ -396,7 +565,7 @@
 								src="static/images/col_shapes_cat_stvae.png"
 								alt="col_shapes_cat_stvae"
 							/>
-							<h2 class="subtitle has-text-centered">
+							<h2 class="subtitle has-text-centered" style="color: white;">
 								Distribution of data from categorical columns between pretrained
 								vs. trained from scratch models. Data is retrieved from Kaggle
 								datasets, STVAE.
@@ -409,15 +578,15 @@
 		<!-- End image carousel -->
 
 		<!-- Youtube video -->
-		<section class="hero is-small is-light">
+		<!-- <section class="hero is-small is-light">
 			<div class="hero-body">
 				<div class="container">
-					<!-- Paper video. -->
+					
 					<h2 class="title is-3">Video Presentation</h2>
 					<div class="columns is-centered has-text-centered">
 						<div class="column is-four-fifths">
 							<div class="publication-video">
-								<!-- Youtube embed code here -->
+								
 								<iframe
 									src="https://www.youtube.com/embed/JkaxUblCGz0"
 									frameborder="0"
@@ -429,11 +598,11 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End youtube video -->
 
 		<!-- Video carousel -->
-		<section class="hero is-small">
+		<!-- <section class="hero is-small">
 			<div class="hero-body">
 				<div class="container">
 					<h2 class="title is-3">Another Carousel</h2>
@@ -448,7 +617,7 @@
 								loop
 								height="100%"
 							>
-								<!-- Your video file here -->
+								
 								<source src="static/videos/carousel1.mp4" type="video/mp4" />
 							</video>
 						</div>
@@ -462,7 +631,7 @@
 								loop
 								height="100%"
 							>
-								<!-- Your video file here -->
+								
 								<source src="static/videos/carousel2.mp4" type="video/mp4" />
 							</video>
 						</div>
@@ -477,18 +646,18 @@
 								height="100%"
 							>
 								\
-								<!-- Your video file here -->
+								
 								<source src="static/videos/carousel3.mp4" type="video/mp4" />
 							</video>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End video carousel -->
 
 		<!-- Paper poster -->
-		<section class="hero is-small is-light">
+		<!-- <section class="hero is-small is-light">
 			<div class="hero-body">
 				<div class="container">
 					<h2 class="title">Poster</h2>
@@ -497,7 +666,7 @@
 					</iframe>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!--End paper poster -->
 
 		<!--BibTex citation -->
@@ -511,12 +680,12 @@
 		</section>
 		<!--End BibTex citation -->
 
-		<footer class="footer">
+		<footer class="footer" style="background-color: #1a1a1a;">
 			<div class="container">
-				<div class="columns is-centered">
+				<div class="columns is-centered" >
 					<div class="column is-8">
 						<div class="content">
-							<p style="color: black">
+							<p style="color: white;">
 								This page was built using the
 								<a
 									href="https://github.com/eliahuhorwitz/Academic-project-page-template"

@@ -72,10 +72,10 @@ input[type='date'],
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	background: #5055cb;
+	background: #2c0454;
 	padding: 10px 25px;
 	border-radius: 10px;
-	border: 1px solid #686ef9;
+	border: 1px solid #2c0454;
 }
 .ladder-title {
 	flex: 2;
@@ -86,9 +86,10 @@ input[type='date'],
 }
 .ladder-title {
 	font-size: 20px;
-	color: #888dff !important;
+	font-family: 'Google Sans', sans-serif;
+	color: #20a7f8 !important;
 	font-weight: bold;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 .ladder-search input {
 	color: white;
@@ -117,7 +118,7 @@ input[type='date'],
 }
 .leaderboard-results thead th {
 	padding: 25px;
-	color: #747474;
+	color: #37648a;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -137,7 +138,7 @@ input[type='date'],
 	color: #747474;
 }
 .leaderboard-results tbody tr:first-child {
-	color: #686ef9;
+	color: #20a7f8;
 }
 .leaderboard-results tbody span {
 	font-weight: bold;

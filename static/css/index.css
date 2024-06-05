@@ -32,10 +32,11 @@ body {
 	color: white;
 }
 
-.subtitle {
+.has-text-centered {
 	font-family: 'Noto Sans', sans-serif;
 	color: white;
 	font-size: 16px;
+	margin-top: 32px;
 }
 
 .publication-title {
@@ -140,8 +141,4 @@ body {
 
 .eql-cntrb {
 	font-size: smaller;
-}
-
-.has-text-centered {
-	margin-top: 32px;
 }
