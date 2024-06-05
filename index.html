@@ -43,6 +43,23 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+    tr:nth-child(even) {background-color: #f2f2f2;}
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+  </style>
 </head>
 <body>
 
@@ -158,6 +175,38 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Leaderboard -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-centered has-text-centered">
+      <h2 class="title is-3">Leaderboard</h2>
+        <table>
+          <tr>
+              <th>Rank</th>
+              <th>Username</th>
+              <th>Score</th>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Player1</td>
+              <td>1000</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Player2</td>
+              <td>800</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Player3</td>
+              <td>750</td>
+          </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Experiment result table -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-centered has-text-centered">
@@ -169,7 +218,7 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Transferability Analysis</h2>
