@@ -44,6 +44,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="static/js/leaderboard.js"></script>
 
 </head>
 <body>
@@ -218,6 +219,22 @@
 
           </tbody>
         </table>
+
+        <table id="gable">
+          <colgroup>
+              <col class="twenty" />
+              <col class="fourty" />
+              <col class="thirtyfive" />
+              <col class="twentyfive" />
+          </colgroup>
+          <tr>
+              <th onclick="sortTable(0)"><span class="glyphicon glyphicon-sort"></span>&nbsp&nbspCOUNTRY</th>
+              <th onclick="sortTable(1)"><span class="glyphicon glyphicon-sort"></span>&nbsp&nbspLOCATION</th>
+              <th onclick="sortTable(2)"><span class="glyphicon glyphicon-sort"></span>&nbsp&nbspBALANCE</th>
+              <th onclick="sortTable(3)"><span class="glyphicon glyphicon-sort"></span>&nbsp&nbspDATE</th>
+          </tr>
+      </table>
+
       </section>
     <!-- <div class="container is-centered has-text-centered">
       <h2 class="title is-3">Leaderboard</h2>
@@ -361,9 +378,6 @@
   </div>
 </section>
 <!-- End video carousel -->
-
-
-
 
 
 
