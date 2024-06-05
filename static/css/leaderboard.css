@@ -17,6 +17,10 @@ th {
     color: white;
 } */
 
+td {
+  text-align: center;
+}
+
 
 /* Codepen Specific */
 * {
@@ -25,7 +29,7 @@ th {
     font-family:Helvetica, Arial, sans-serif;
   }
   body {
-    background:#232323;
+    /* background:#232323; */
     font-family: 'Noto Sans', sans-serif;
   }
   input[type=text], textarea, input[type=email], input[type=password], input[type=tel], input[type=url], input[type=search], input[type=date] {
