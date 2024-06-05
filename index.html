@@ -144,7 +144,7 @@
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -169,24 +169,53 @@
           <div class="ladder-title">
           <h1>Standings</h1>
           </div>
-          <div class="ladder-search">
+          <!-- <div class="ladder-search">
             <input type="text" id="search-leaderboard" class="live-search-box" placeholder="Search Team, Player..." />
-          </div>
+          </div> -->
         </nav>
         <table id="rankings" class="leaderboard-results" width="100%">
           <thead>
             <tr>
               <th>Rank</th>
-              <th>Team</th>
-              <th>Country</th>
-              <th>P1</th>
-              <th>P2</th>
-              <th>Games Played</th>
-              <th>PTS</th>
+              <th>Model</th>
+              <th>Dataset</th>
+              <th>#Params</th>
+              <th>Shape score</th>
+              <th>Trend score</th>
+              <th>Overall score</th>
             </tr>
           </thead>
           <tbody>
-            <!-- Load SCRIMcom Leaderboard Ranings -->
+            <tr>
+              <th>1</th>
+              <th>GReaT</th>
+              <th>Kaggle Domain</th>
+              <th>N/A</th>
+              <th>0.72 (0.14)</th>
+              <th>0.55 (0.23)</th>
+              <th>0.64 (0.16)</th>
+            </tr>
+
+            <tr>
+              <th>2</th>
+              <th>CTGAN</th>
+              <th>Kaggle Domain</th>
+              <th>N/A</th>
+              <th>0.69 (0.12)</th>
+              <th>0.53 (0.24)</th>
+              <th>0.62 (0.15)</th>
+            </tr>
+
+            <tr>
+              <th>3</th>
+              <th>GReaT</th>
+              <th>Kaggle Random</th>
+              <th>N/A</th>
+              <th>0.73 (0.16)</th>
+              <th>0.5 (0.25)</th>
+              <th>0.61 (0.18)</th>
+            </tr>
+
           </tbody>
         </table>
       </section>
@@ -219,7 +248,7 @@
 </section>
 
 <!-- Experiment result table -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container is-centered has-text-centered">
       <h2 class="title is-3">Transferability performance of pretrained vs. trained from scratch models</h2>
@@ -230,7 +259,7 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Transferability Analysis</h2>
