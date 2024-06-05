@@ -139,6 +139,7 @@ input[type='date'],
 }
 .leaderboard-results tbody tr:first-child {
 	color: #20a7f8;
+	font-weight: bold;
 }
 .leaderboard-results tbody span {
 	font-weight: bold;
