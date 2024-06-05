@@ -65,7 +65,7 @@ input[type='date'],
 }
 /* /end Codepen Specific */
 /* Ladder Navigation */
-#leaderboard {
+.leaderboard {
 	padding: 50px;
 }
 .ladder-nav {
@@ -85,7 +85,7 @@ input[type='date'],
 	padding-right: 25px;
 }
 .ladder-title {
-	font-size: 20px;
+	font-size: 25px;
 	font-family: 'Google Sans', sans-serif;
 	color: #20a7f8 !important;
 	font-weight: bold;
